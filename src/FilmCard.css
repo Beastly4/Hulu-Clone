@@ -1,0 +1,49 @@
+.filmCard {
+  color: #ffffff;
+  height: 400px;
+  max-width: 500px;
+  padding: 40px;
+  transition: transform 144ms ease-in-out;
+  cursor: pointer;
+}
+
+.filmCard:hover {
+  transform: scale(1.1);
+}
+
+.filmCard > img {
+  height: 300px;
+  object-fit: contain;
+  max-width: 500px;
+}
+
+.filmCard > h2 {
+  padding: 10px 0 0 0;
+}
+
+.filmCard:hover > .filmCard__about {
+  opacity: 1;
+}
+
+.filmCard__about {
+  opacity: 1;
+  transition: ease-in-out 0.4s;
+  display: flex;
+}
+
+.filmCard__about__item {
+  padding: 0 10px;
+}
+
+.filmCard__about__item:first-child {
+  padding: 0 10px 0 0;
+}
+
+.MuiSvgIcon-root:hover {
+  transform: scale(1.14);
+}
+
+.MuiSvgIcon-root {
+  transition: 222ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+  cursor: pointer;
+}
