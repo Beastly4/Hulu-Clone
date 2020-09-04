@@ -11,6 +11,7 @@
 
 .header__logo {
   cursor: pointer;
+  padding: 0 10px 0 0;
 }
 
 .header > img {
@@ -26,6 +27,7 @@
 
 .header__icon:hover > p {
   display: inline-flex;
+  opacity: 1;
 }
 
 .header::-webkit-scrollbar {
@@ -39,6 +41,7 @@
   font-size: small;
   margin: 0 auto;
   transition: 0.4s;
+  opacity: 0;
 }
 
 .header__icons {
@@ -56,4 +59,9 @@
 
 .header__icon--active > p {
   display: inline-flex !important;
+  opacity: 1;
+}
+
+.header__icon:hover > .MuiSvgIcon-root {
+  transform: scale(1.07);
 }

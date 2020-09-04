@@ -5,14 +5,13 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 
 const base_url = "https://image.tmdb.org/t/p/original";
 
-const FilmCard = forwardRef(({ movie }, ref) => {
+const FilmCard = forwardRef(({ setMovies, movie, movies }, ref) => {
   return (
     <div ref={ref} className="filmCard">
       <img
         src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
         alt=""
       ></img>
-
       <TextTruncate
         line={1}
         element="p"
@@ -25,7 +24,13 @@ const FilmCard = forwardRef(({ movie }, ref) => {
         <p className="filmCard__about__item">
           {movie.release_date || movie.first_air_date}
         </p>
-        <p className="filmCard__about__item">
+        <p
+          className="filmCard__about__item"
+          onClick={() => {
+            movie.vote_count++;
+            setMovies([...movies]);
+          }}
+        >
           <ThumbUpIcon />
         </p>
         <p className="filmCard__about__item">{movie.vote_count}</p>

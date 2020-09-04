@@ -13,6 +13,7 @@ function Films({ selectedOption }) {
       setMovies(request.data.results);
       return request;
     }
+
     fetchData();
   }, [selectedOption]);
 
@@ -20,7 +21,14 @@ function Films({ selectedOption }) {
     <div className="films">
       <FlipMove>
         {movies.map((movie) => {
-          return <FilmCard key={movie.id} movie={movie} />;
+          return (
+            <FilmCard
+              setMovies={setMovies}
+              movies={movies}
+              key={movie.id}
+              movie={movie}
+            />
+          );
         })}
       </FlipMove>
     </div>

@@ -17,6 +17,29 @@
   max-width: 500px;
 }
 
+@media screen and (max-width: 600px) {
+  .filmCard,
+  .filmCard > img {
+    max-width: 300px;
+  }
+
+  .filmCard > img {
+    height: 200px;
+  }
+
+  .filmCard {
+    padding: 10px 20px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .filmCard,
+  .filmCard > img {
+    max-width: 230px;
+  }
+}
+
 .filmCard > h2 {
   padding: 10px 0 0 0;
 }
@@ -33,6 +56,9 @@
 
 .filmCard__about__item {
   padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filmCard__about__item:first-child {
