@@ -36,7 +36,7 @@ function Header() {
           <p>Account</p>
         </div>
       </div>
-      <img className="header__logo" src="/images/hulu.svg" alt="Hulu"></img>
+      <img className="header__logo" src="./images/hulu.svg" alt="Hulu"></img>
     </div>
   );
 }
