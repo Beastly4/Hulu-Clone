@@ -2,7 +2,7 @@
   color: #ffffff;
   height: 400px;
   max-width: 500px;
-  padding: 40px;
+  padding: 10px;
   transition: transform 144ms ease-in-out;
   cursor: pointer;
 }
@@ -40,8 +40,9 @@
   }
 }
 
-.filmCard > h2 {
+.filmCard__description {
   padding: 10px 0 0 0;
+  text-align: center;
 }
 
 .filmCard:hover > .filmCard__about {

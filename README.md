@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+link to pages https://beastly4.github.io/Hulu-Clone/
+
+
 ## Available Scripts
 
 In the project directory, you can run:

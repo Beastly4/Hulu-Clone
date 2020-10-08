@@ -12,4 +12,5 @@ export default {
   fetchWestern: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=37`,
   fetchAnimation: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=16`,
   fetchTV: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=10770`,
+  search: `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=`,
 };

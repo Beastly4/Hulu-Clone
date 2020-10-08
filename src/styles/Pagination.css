@@ -1,0 +1,18 @@
+.films__btn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 15px 15px 50px 15px;
+  background-color: #fff;
+  width: 100px;
+  padding: 5px;
+  border-radius: 11px;
+  transition-duration: 0.4s;
+}
+
+.films__btn:hover {
+  transform: scale(1.17);
+}

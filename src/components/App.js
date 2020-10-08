@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import "./App.css";
+import "../styles/App.css";
 import Header from "./Header";
 import Nav from "./Nav";
 import Films from "./Films";
-import requests from "./requests";
+import requests from "../requests/requests";
+import Modal from "react-modal";
 
+Modal.setAppElement("#root");
 function App() {
   const [selectedOption, setSelectedOption] = useState(requests.fetchTrending);
 
   return (
     <div className="App">
-      <Header />
+      <Header setSelectedOption={setSelectedOption} />
       <Nav setSelectedOption={setSelectedOption} />
       <Films selectedOption={selectedOption} />
     </div>
